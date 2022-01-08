@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"  />
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+
+  <div class="form">
+    <form id="survey-form" class="" action="index.html" method="post">
+
+      <div class="impo">
+        <label id="name-label" for="name">Name</label><br>
+        <input type="text" class="box" id="name" name="name" placeholder="Enter your name" required value=""><br>
+      </div>
+
+
+      <div class="impo">
+        <label id="email-label" for="email">Email</label><br>
+        <input type="email" class="box" id="email" name="email" placeholder="Enter your email" required value=""><br>
+      </div>
+
+
+      <div class="impo">
+        <label id="number-label" for="number">Age (optional)</label><br>
+        <input id="number" class="box" type="number" name="age" min="10" max="99"><br>
+      </div>
+
+      <div class="impo">
+        <p class="question">Which option best describes your current role?</p><br>
+        <select id="dropdown" class="box" name="">
+          <option disabled selected>Select current role</option>
+          <option value="">Student</option>
+          <option value="">Full Time Job</option>
+          <option value="">Full Time Learner</option>
+          <option value="">Prefernot to say</option>
+          <option value="">Other</option>
+        </select>
+      </div>
+
+
+      <div class="impo">
+        <p class="question">Would you recommend freeCodeCamp to a friend?</p>
+        <label><input type="radio" name="user-recommend" value="definitely" checked>Definitely</label><br>
+        <label><input type="radio" name="user-recommend" value="maybe">Maybe</label><br>
+        <label><input name="user-recommend" value="not-sure" type="radio">Not sure</label><br>
+      </div>
+
+
+      <div class="impo">
+        <p class="question">What is your favorite feature of freeCodeCamp?</p>
+        <select id="most-like" class="box" name="mostlike">
+          <option disabled selected>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="opensource">Open Source</option>
+        </select>
+      </div>
+
+
+      <div class="impo">
+        <p class="question">What would you like to see improved? (Check all that apply)</p>
+        <label><input type="checkbox" name="prefer" value="front-end-projects">Front-end Projects</label><br>
+        <label><input type="checkbox" name="prefer" value="back-end-projects">Back-end Projects</label><br>
+        <label><input type="checkbox" name="prefer" value="data-visualization">Data Visualization</label><br>
+        <label><input type="checkbox" name="prefer" value="challenges">Challenges</label><br>
+        <label><input type="checkbox" name="prefer" value="open-source-community">Open Source Community</label><br>
+        <label><input type="checkbox" name="prefer" value="gitter-help-rooms">Gitter help rooms</label><br>
+        <label><input type="checkbox" name="prefer" value="videos">Videos</label><br>
+        <label><input type="checkbox" name="prefer" value="city-meetupss">City Meetupss</label><br>
+        <label><input type="checkbox" name="prefer" value="wiki">Wiki</label><br>
+        <label><input type="checkbox" name="prefer" value="forum">Forum</label><br>
+        <label><input type="checkbox" name="prefer" value="additional-courses">Additional Courses</label><br>
+      </div>
+
+      <div class="impo">
+        <p class="question">Any comments or suggestions?</p>
+        <textarea class="box" name="comments" placeholder="Enter your comment here..."></textarea><br>
+      </div>
+
+
+
+      <div class="impo">
+        <button class="boxm" type="submit" name="submit">SUBMIT</button>
+        <button  class="boxm reset" type="reset" name="reset">RESET</button>
+      </div>
+
+
+
+
+    </form>
+  </div>
+
+</body>
+
+</html>
